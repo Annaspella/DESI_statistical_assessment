@@ -39,11 +39,11 @@ The project stems from my research internship at the European Commission (DG CON
 
 ## 🗂️ Repository Structure
 
-📁 data/                        # Source data for DESI 2022 and revised indicators
-📁 scripts/                     # MATLAB .m files for PCA, ROBPCA, scoring, and ranking
-📁 results/                     # Outputs, scores, figures, and tables
-📄 Gotti_Anna.pdf               # Full thesis document (link above)
-📄 README.md                    # This file
+- 📁 data/                        # Source data for DESI 2022 and revised indicators
+- 📁 scripts/                     # MATLAB .m files for PCA, ROBPCA, scoring, and ranking
+- 📁 results/                     # Outputs, scores, figures, and tables
+- 📄 Gotti_Anna.pdf               # Full thesis document (link above)
+- 📄 README.md                    # This file
 
 ---
 
@@ -103,10 +103,9 @@ The project stems from my research internship at the European Commission (DG CON
 
 ## 📚 References
 
-- European Commission, *DESI 2022 Report* & *Methodological Notes*
-- Hubert, Rousseeuw & Vanden Branden (2005) – *ROBPCA*
+- European Commission’s [DESI 2022 Report](https://digital-strategy.ec.europa.eu/en/policies/desi)
+- Hubert, M., Rousseeuw, P. J., & Vanden Branden, K. (2005). **ROBPCA: A new approach to robust principal component analysis**.
 - OECD Handbook on Constructing Composite Indicators
-- Saisana, Tarantola et al. – *Robustness & Sensitivity in CIs*
 
 ---
 
