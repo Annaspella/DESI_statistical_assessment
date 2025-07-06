@@ -118,6 +118,15 @@ DESI is structured around **four key dimensions**, each representing a core area
 
 ---
 
+## ✅ Conclusion: Contextual Relevance and the End of DESI
+
+The European Commission’s decision to discontinue DESI after its 2022 edition aligns with several critical methodological insights revealed by this project. The analysis exposed limitations in the index's internal consistency, the conceptual overlap of its dimensions, and the fragility of its scoring framework when subjected to alternative weighting schemes. Robust PCA further identified structural outliers that challenged the validity of comparative country rankings.
+
+These findings substantiate the rationale for transitioning away from DESI and toward more transparent, flexible, and methodologically sound approaches to monitoring digital development in the EU. Future frameworks will benefit from lessons learned here—particularly regarding dimensional coherence, statistical robustness, and the need for evolving measurement tools that keep pace with rapid digital transformation.
+
+---
+
+
 ## 📚 References
 
 - European Commission’s [DESI 2022 Report](https://digital-strategy.ec.europa.eu/en/policies/desi)
