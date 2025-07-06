@@ -39,11 +39,11 @@ The project stems from my research internship at the European Commission (DG CON
 
 ## 🗂️ Repository Structure
 
-📁 data/ # Source data for DESI 2022 and revised indicators
-📁 scripts/ # MATLAB .m files for PCA, ROBPCA, scoring, and ranking
-📁 results/ # Outputs, scores, figures, and tables
-📄 Gotti_Anna.pdf # Full thesis document (link above)
-📄 README.md # This file
+📁 data/                        # Source data for DESI 2022 and revised indicators
+📁 scripts/                     # MATLAB .m files for PCA, ROBPCA, scoring, and ranking
+📁 results/                     # Outputs, scores, figures, and tables
+📄 Gotti_Anna.pdf               # Full thesis document (link above)
+📄 README.md                    # This file
 
 ---
 
