@@ -17,6 +17,23 @@ The project stems from my research internship at the European Commission (DG CON
 
 ---
 
+## 🌐 About DESI 2022
+
+The **Digital Economy and Society Index (DESI)** monitors Europe’s overall digital performance and tracks the progress of EU countries in their digital competitiveness. The 2022 edition mainly reflects data collected in 2021 and includes recalculations for previous years due to structural changes in indicators, corrections in underlying data, and the removal of the UK from the EU average.
+
+### DESI 2022 Dimensions
+
+DESI is structured around **four key dimensions**, each representing a core area of digital progress:
+
+| Acronym | Full Name                       | Description                                                                                 |
+|---------|--------------------------------|---------------------------------------------------------------------------------------------|
+| HC      | Human Capital                  | Measures digital skills and internet usage among individuals, including ICT specialists.   |
+| CN      | Connectivity                  | Assesses the quality and coverage of digital infrastructure, such as broadband and 5G.      |
+| IDT     | Integration of Digital Technology | Evaluates how businesses adopt digital technologies to improve operations and sales.       |
+| DPS     | Digital Public Services       | Captures the availability and usage of online public services, including eGovernment tools.|
+
+---
+
 ## 🎯 Research Goals
 
 - Assess the **internal consistency** of DESI 2022 dimensions and sub-dimensions.
