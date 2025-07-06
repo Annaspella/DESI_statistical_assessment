@@ -137,4 +137,3 @@ DESI is structured around **four key dimensions**, each representing a core area
 If you use this work or build upon it, please cite:
 
 **Gotti, A. (2023).** *Unveiling the Digital Frontier: An In-Depth Analysis of the Digital Economy and Society Index (DESI)*. MSc Thesis, University of Padova.  
-📄 [View thesis](./Gotti_Anna.pdf)
