@@ -112,8 +112,7 @@ The project stems from my research internship at the European Commission (DG CON
 
 ## 📬 Contact
 
-📧 annagotti@vu.nl  
-🔗 [LinkedIn](https://www.linkedin.com/in/your-profile) *(optional)*
+📧 anna.gotti16@gmail.com
 
 ---
 
