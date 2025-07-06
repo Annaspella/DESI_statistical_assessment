@@ -1,89 +1,125 @@
 # 📊 Unveiling the Digital Frontier: An In-Depth Analysis of the Digital Economy and Society Index (DESI)
 
-
-**Author:** Anna Gotti  
-**Affiliation:** VU Amsterdam | DG CONNECT, European Commission  
-**Thesis Project | MSc in Statistical Sciences**  
-**Academic Year:** 2024-2025
-
----
-
-## 🧠 Overview
-
-This repository contains the code and documentation for my Master's thesis project developed during a research internship at the **Directorate-General for Communications Networks, Content and Technology (DG CONNECT)** of the **European Commission**. The work critically analyses the **Digital Economy and Society Index (DESI) 2022**, a composite indicator that evaluates how digital transformation affects EU economies and societies.
-
-My goal was to explore the **statistical soundness and internal consistency** of DESI’s methodological framework, focusing on latent variable modeling and robustness in the presence of outliers.
+**Author**: Anna Gotti  
+**Degree**: MSc in Statistical Sciences  
+**Institution**: University of Padova  
+**Supervisors**: Dr. Manuela Scioni (Unipd), Dr. Paola Annoni (European Commission - DG CONNECT)  
+📄 [Full thesis PDF](./Gotti_Anna.pdf)
 
 ---
 
-## 🎯 Objectives
+## 🧠 Project Overview
 
-- **Evaluate** the internal consistency of DESI and its dimensions.
-- **Justify** or challenge the aggregation rules used in computing DESI scores.
-- **Compare** classical PCA with **Robust PCA (ROBPCA)** for latent factor analysis.
-- **Assess** how dimensional coherence and weighting schemes influence rankings.
-- **Suggest** improvements for the structure and methodology of DESI to better support digital policy decision-making.
+This repository contains the full statistical and computational analysis supporting my master’s thesis:  
+**“Unveiling the Digital Frontier: An In-Depth Analysis of the Digital Economy and Society Index”**.
+
+The project stems from my research internship at the European Commission (DG CONNECT) and focuses on the **methodological validation and enhancement of the DESI 2022 framework**—a composite index used to measure digital performance across EU member states.
 
 ---
 
-## 🔧 Methods
+## 🎯 Research Goals
 
-- **Cronbach’s Alpha** – to assess internal reliability of dimensions.
-- **Principal Component Analysis (PCA)** – to explore latent structure.
-- **Robust PCA (ROBPCA)** – to detect and handle outliers in high-dimensional space.
-- **Pearson Correlation Coefficient** – for assessing indicator inter-relationships.
-- **Sensitivity Analysis** – to evaluate the impact of structural and weight adjustments on country scores.
+- Assess the **internal consistency** of DESI 2022 dimensions and sub-dimensions.
+- Explore **latent structures** using PCA and **ROBPCA** to address outliers.
+- Provide **robust score recalculations** for dimensions based on proposed adjustments.
+- Conduct **sensitivity analysis** on indicator weights and new sub-dimensions (especially for Digital Public Services).
+- Evaluate **ranking and score impacts** under various methodological scenarios.
+
+---
+
+## 🧪 Methods
+
+- **Cronbach’s Alpha** – for internal reliability.
+- **Principal Component Analysis (PCA)** – for latent dimension structure.
+- **Robust PCA (ROBPCA)** – to detect multivariate outliers.
+- **Sensitivity & Impact Analysis** – for weight testing and robustness checks.
+- **Min-max scaling** – for score normalization using fixed min/max benchmarks.
 
 ---
 
 ## 🗂️ Repository Structure
 
-📁 data/ # Raw and cleaned DESI datasets
-📁 scripts/ # Analysis scripts (R or Python)
-📁 results/ # Output tables, plots, PCA loadings
-📁 figures/ # Graphs and charts for the thesis
-📄 thesis_summary.pdf # Summary of the thesis (Italian)
-📄 README.md # Project overview and instructions
+📁 data/ # Source data for DESI 2022 and revised indicators
+📁 scripts/ # MATLAB .m files for PCA, ROBPCA, scoring, and ranking
+📁 results/ # Outputs, scores, figures, and tables
+📄 Gotti_Anna.pdf # Full thesis document (link above)
+📄 README.md # This file
 
 ---
 
-## 📈 Key Insights
+## 🔍 Code & Data Description
 
-- Some DESI dimensions exhibit **low internal coherence**, which may challenge their conceptual validity.
-- PCA and ROBPCA reveal **different latent structures**, particularly in the presence of outliers.
-- Adjustments to **subdimension structure and weights** significantly affect the **country rankings**, suggesting a need for a more data-driven and policy-aligned design.
+### 📂 MATLAB Scripts
+
+- **DESI_analysis_$.m**  
+  Internal consistency analysis of `$` dimension (HC, CN, IDT, DPS).  
+  DPS has two versions using 2021 and 2022 data separately.
+
+- **DESI_Scores_$.m**  
+  Score calculation scripts for `$` dimension and simulation of revised scoring scenarios.
+
+- **get_rank.m**  
+  Function to compute rankings from computed scores.
+
+- **get_score.m**  
+  Function to handle scoring in presence of missing (`NaN`) values.
 
 ---
 
-## 📚 Background
+### 📊 Excel Files
 
-Composite indicators like DESI are increasingly used in policy-making, yet their reliability depends on both **conceptual soundness** and **methodological rigor**. By grounding the analysis in **statistical validation techniques**, this project contributes to a more **transparent**, **robust**, and **policy-relevant** index design.
+- **calculations_minmax_egov_2022data.xlsx / _2023data.xlsx**  
+  Min-max thresholds used for normalization of new eGov indicators.
+
+- **min_max.xlsx**  
+  Aggregated table with min, max, and weights for all DESI and new indicators.
+
+- **Weights_Subdim.xlsx**  
+  Comparison of original and proposed sub-dimensional weights.
 
 ---
 
-## 🔗 Related Work
+### 📈 CSV Files
 
-- European Commission’s [DESI 2022 Report](https://digital-strategy.ec.europa.eu/en/policies/desi)
-- Hubert, M., Rousseeuw, P. J., & Vanden Branden, K. (2005). **ROBPCA: A new approach to robust principal component analysis**.
+- **DESI Y6.csv**  
+  Raw dataset for DESI 2022 (no missing data).
+
+- **DESI Y7_2.csv**  
+  Updated dataset using new 2022 data and revised indicator 4a1 (`I_IGOVANYS`).
+
+- **new_indicators_$.csv**  
+  New indicator values for each `$` dimension (e.g. DPS, CN, etc.).
+
+---
+
+## 📌 Key Findings
+
+- DESI dimensions vary significantly in **internal coherence**, raising concerns about conceptual validity.
+- ROBPCA analysis detected **multivariate outliers** in several indicators, justifying need for robust statistics.
+- Revised sub-dimensional weights and indicator inclusion strategies **altered country rankings**, especially in the DPS dimension.
+- Sensitivity analysis highlighted **non-trivial trade-offs** between indicator structure and policy signaling.
+
+---
+
+## 📚 References
+
+- European Commission, *DESI 2022 Report* & *Methodological Notes*
+- Hubert, Rousseeuw & Vanden Branden (2005) – *ROBPCA*
 - OECD Handbook on Constructing Composite Indicators
-
----
-
-## 💡 Future Work
-
-- Extend analysis to DESI 2023 and compare longitudinal effects.
-- Incorporate machine learning for dimensionality reduction and classification.
-- Develop a dashboard or R Shiny app for interactive policy simulations.
-
----
-
-## 🤝 Acknowledgments
-
-Thanks to my supervisor and the team at **DG CONNECT, European Commission**, for their guidance and data access. Special thanks to the VU Amsterdam Department of Economics for supporting this project.
+- Saisana, Tarantola et al. – *Robustness & Sensitivity in CIs*
 
 ---
 
 ## 📬 Contact
 
-📧 ann.gotti16@gmail.com  
+📧 annagotti@vu.nl  
+🔗 [LinkedIn](https://www.linkedin.com/in/your-profile) *(optional)*
 
+---
+
+## 📎 Citation
+
+If you use this work or build upon it, please cite:
+
+**Gotti, A. (2023).** *Unveiling the Digital Frontier: An In-Depth Analysis of the Digital Economy and Society Index (DESI)*. MSc Thesis, University of Padova.  
+📄 [View thesis](./Gotti_Anna.pdf)
